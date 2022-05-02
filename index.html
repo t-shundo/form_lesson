@@ -30,6 +30,76 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
+            <div class="name__form">
+              <div class="name__box width-half">
+                <p class="label__text">名字<span> ※</span></p>
+                <input class="input__initialize input__form" type="text" name="name" required>
+              </div>
+              <div class="name__box width-half">
+                <p class="label__text">名前<span> ※</span></p>
+                <input class="input__initialize input__form" type="text" name="name" required>
+              </div>
+            </div>
+            <div class="sex__form form_marginTop">
+              <p class="label__text">性別</p>
+              <div class="sex__box">
+                <input type="radio" name="sex" value="male" id="male">
+                <label class="radio__button" for="male">男性</label>
+                <input type="radio" name="sex" value="female" id="female">
+                <label class="radio__button" for="female">女性</label>
+                <input type="radio" name="sex" value="other" id="other">
+                <label class="radio__button" for="other">その他</label>
+              </div>
+            </div>
+            <div class="borne__form width-half form_marginTop">
+              <p class="label__text">出身</p>
+              <div class="borne__area">
+                <select class="input__initialize input__form borne" name="from">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="mail__form form_marginTop">
+              <p class="label__text">Eメール<span> ※</span></p>
+              <input class="input__initialize input__form" type="email" name="email" required placeholder="ex) hoge@example.com">
+            </div>
+            <div class="tel__form form_marginTop">
+              <p class="label__text">電話番号</p>
+              <input class="input__initialize input__form" type="tel" name="tel" placeholder="ex) 09012345678">
+            </div>
+            <div class="password__form form_marginTop">
+              <p class="label__text">パスワード<span> ※</span></p>
+              <input class="input__initialize input__form" type="password" name="password" required>
+            </div>
+            <div class="password__form_check form_marginTop">
+              <p class="label__text">パスワード(確認用)<span> ※</span></p>
+              <input class="input__initialize input__form" type="password" name="password" required>
+            </div>
+            <div class="course__form form_marginTop">
+              <p class="label__text">希望コース</p>
+                <div class="course__box">
+                  <input type="checkbox" name="course" value="frontend" id="frontend">
+                  <label class="course__checkbox" for="frontend">フロントエンド</label>
+                </div>
+                <div class="course__box">
+                  <input type="checkbox" name="course" value="backend" id="backend">
+                  <label class="course__checkbox" for="backend">バックエンド</label>
+                </div>
+                <div class="course__box">
+                  <input type="checkbox" name="course" value="application" id="application">
+                  <label class="course__checkbox" for="application">アプリ</label>
+                </div>
+            </div>
+            <div class="remarks__form form_marginTop">
+              <p class="label__text">備考</p>
+              <textarea class="input__initialize input__form" name="remarks"  placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="create__form form_marginTop">
+              <input type="submit" value="アカウント作成" class="input__initialize create__button">
+            </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>

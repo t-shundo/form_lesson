@@ -162,3 +162,192 @@
 .resend-mail {
   display: inline-block;
 }
+
+/*--- ここから記入 ---*/
+.input__initialize {
+  background: transparent;
+  outline: none;
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-progress-appearance: none;
+  padding: 0;
+  border: none;
+}
+
+.input__form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 35px;
+  background-color: #fbfbfb;
+  border: solid 1px #d9d9d9;
+  margin-top: 5px;
+  padding: 5px;
+  line-height: 2;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.label__text {
+  font-size: 12px;
+  color: #545658
+}
+
+.check__form label {
+  display: block;
+}
+
+.name__form {
+  display: flex;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.name__box {
+  margin-left: 15px;
+}
+
+.name__box:first-child {
+  margin-left: 0;
+}
+
+span {
+  color: #dd4b39;
+}
+
+.form_marginTop {
+  margin-top: 20px;
+}
+
+input[type=radio] ,input[type=checkbox]{
+  display: none;
+}
+
+.sex__box {
+  margin-top: 8px;
+  color: #545658;
+}
+
+.radio__button {
+  box-sizing: border-box;
+  padding-left: 20px;
+  position: relative;
+  width: auto;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.radio__button:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.radio__button::before {
+  background-color: #fbfbfb;
+  border: solid 1px #d9d9d9;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 15px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 15px;
+}
+
+input[type=radio]:checked + .radio__button::after {
+  background-color:#01bfbd;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  position: absolute;
+}
+
+.course__checkbox {
+  color: #545658;
+  position: relative;
+  padding-left: 25px;
+}
+
+.course__box {
+  margin-top: 10px;
+}
+
+.course__box:nth-of-type(1) {
+  margin-top: 5px;
+}
+
+.course__checkbox::before {
+  content: "";
+  display: block;
+  background-color: #fbfbfb;
+  border: solid 1px #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+}
+
+input[type=checkbox]:checked + .course__checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  border-left: solid 3px #01bfbd;
+  border-bottom: solid 3px #01bfbd;
+  top: 0px;
+  left: 2px;
+  width: 15px;
+  height: 8px;
+}
+
+.borne__area {
+  position: relative;
+}
+
+.borne {
+  color: #545658;
+}
+
+.borne__area::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  right: 10px;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-bottom: solid 2px #d9d9d9;
+  border-right: solid 2px #d9d9d9;
+}
+
+.remarks__form .input__form {
+  height: 100px;
+}
+
+.create__button {
+  padding: 14px;
+  background-color: #01bfbd;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.input__form:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+}
